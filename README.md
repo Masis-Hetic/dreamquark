@@ -1,3 +1,11 @@
+## API
+- NodeJS, ExpressJS, PostreSQL
+- Schema de la BDD : schema.png
+- Script de la BDD : db.sql
+
+## FRONT
+- ReactJS, NextJS, Styled-Components
+
 #### We want to create a user management system
    
 ## Features
@@ -15,11 +23,3 @@
 - Use any technology you want (feel at ease using it)
 - Try to have a functional prototype, even if you don't have all the features
 - Don't hesitate to take shortcuts
-
-## API
-- NodeJS, ExpressJS, PostreSQL
-- Schema de la BDD : schema.png
-- Script de la BDD : db.sql
-
-## FRONT
-- ReactJS, NextJS, Styled-Components
