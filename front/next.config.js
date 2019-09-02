@@ -26,7 +26,7 @@ module.exports = {
     // Dynamic routes for /team/:id
     const teams = await fetch('http://localhost:8080/api/teams');
     const teamsResponse = await teams.json();
-    
+
     const teamURL = teamsResponse.reduce(
       (base, current) => (Object.assign({}, base, {
         [ `/team/${current.id}` ]: {
@@ -52,7 +52,10 @@ module.exports = {
     return Object.assign( {}, userURL, teamURL, organizationsURL, {
       '/': { page: '/' },
       '/teams': { page: '/teams' },
-      '/organizations': { page: '/organizations' }
+      '/organizations': { page: '/organizations' },
+      '/new-user': { page: '/new-user' },
+      '/new-team': { page: '/new-team' },
+      '/new-organization': { page: '/new-organization' },
     } );
   }
 };

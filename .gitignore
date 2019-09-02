@@ -25,7 +25,10 @@ yarn-error.log*
 !/api/package-lock.json
 
 front/node_modules
+front/package-lock.json
 api/node_modules
+api/.env
+api/package-lock.json
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -171,3 +174,5 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/linux,macos,windows
 !/.idea/
+!/api/.env
+!/api/.env

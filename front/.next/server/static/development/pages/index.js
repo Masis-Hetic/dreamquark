@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,10 +88,161 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/head.js":
+/*!****************************!*\
+  !*** ./components/head.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/masis/Documents/dreamquark/dreamquark/front/components/head.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const defaultDescription = '';
+const defaultOGURL = '';
+const defaultOGImage = '';
+
+const Head = props => __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, __jsx("meta", {
+  charSet: "UTF-8",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx("title", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, props.title || ''), __jsx("meta", {
+  name: "description",
+  content: props.description || defaultDescription,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+}), __jsx("meta", {
+  name: "viewport",
+  content: "width=device-width, initial-scale=1",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}), __jsx("link", {
+  rel: "icon",
+  href: "/static/favicon.ico",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:url",
+  content: props.url || defaultOGURL,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:title",
+  content: props.title || '',
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:description",
+  content: props.description || defaultDescription,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}), __jsx("meta", {
+  name: "twitter:site",
+  content: props.url || defaultOGURL,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 25
+  },
+  __self: undefined
+}), __jsx("meta", {
+  name: "twitter:card",
+  content: "summary_large_image",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 26
+  },
+  __self: undefined
+}), __jsx("meta", {
+  name: "twitter:image",
+  content: props.ogImage || defaultOGImage,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:image",
+  content: props.ogImage || defaultOGImage,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:image:width",
+  content: "1200",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29
+  },
+  __self: undefined
+}), __jsx("meta", {
+  property: "og:image:height",
+  content: "630",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}));
+
+Head.propTypes = {
+  title: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  description: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  url: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  ogImage: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (Head);
+
+/***/ }),
 
 /***/ "./components/main-component/main-component.jsx":
 /*!******************************************************!*\
@@ -260,10 +411,10 @@ Nav.A = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.a.withConfig({
 
 /***/ }),
 
-/***/ "./components/pages/user/user.styles.js":
-/*!**********************************************!*\
-  !*** ./components/pages/user/user.styles.js ***!
-  \**********************************************/
+/***/ "./components/pages/index/index.styles.js":
+/*!************************************************!*\
+  !*** ./components/pages/index/index.styles.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -272,23 +423,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-const StyledUser = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "userstyles__StyledUser",
-  componentId: "sc-14vl29f-0"
-})(["position:absolute;top:150px;left:50%;width:40%;transform:translateX(-50%);box-shadow:0 0 4px 0px lightgrey;"]);
-StyledUser.H1 = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h1.withConfig({
-  displayName: "userstyles__H1",
-  componentId: "sc-14vl29f-1"
-})(["margin-bottom:50px;text-align:center;"]);
-StyledUser.P = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfig({
-  displayName: "userstyles__P",
-  componentId: "sc-14vl29f-2"
-})(["line-height:3;border-bottom:1px solid #000;display:flex;justify-content:flex-start;padding-left:10px;background:#fff;&:nth-child(even){background:#eceff1;}"]);
-StyledUser.Span = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.withConfig({
-  displayName: "userstyles__Span",
-  componentId: "sc-14vl29f-3"
-})(["flex-basis:40%;"]);
-/* harmony default export */ __webpack_exports__["default"] = (StyledUser);
+const Home = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "indexstyles__Home",
+  componentId: "sc-1fardff-0"
+})(["margin:100px auto 0;"]);
+Home.Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "indexstyles__Wrapper",
+  componentId: "sc-1fardff-1"
+})(["width:70%;margin:0 auto;"]);
+Home.H1 = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h1.withConfig({
+  displayName: "indexstyles__H1",
+  componentId: "sc-1fardff-2"
+})(["margin-bottom:30px;text-align:center;padding-left:10px;"]);
+Home.Ul = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
+  displayName: "indexstyles__Ul",
+  componentId: "sc-1fardff-3"
+})(["box-shadow:0 0 4px 0px lightgrey;"]);
+Home.Li = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.li.withConfig({
+  displayName: "indexstyles__Li",
+  componentId: "sc-1fardff-4"
+})(["line-height:3;border-bottom:1px solid #000;padding-left:10px;transition:.2s ease-in-out;overflow:hidden;background:#fff;&:nth-child(even){background:#eceff1;}&:hover{transform:scale(1.02);}&:nth-of-type(1){transform:none;}"]);
+Home.A = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.a.withConfig({
+  displayName: "indexstyles__A",
+  componentId: "sc-1fardff-5"
+})(["display:flex;width:100%;cursor:pointer;"]);
+Home.FirstRow = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Li).withConfig({
+  displayName: "indexstyles__FirstRow",
+  componentId: "sc-1fardff-6"
+})(["display:flex;font-weight:bold;"]);
+Home.Span = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.withConfig({
+  displayName: "indexstyles__Span",
+  componentId: "sc-1fardff-7"
+})(["text-overflow:ellipsis;overflow:hidden;white-space:nowrap;"]);
+Home.FirstColumn = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Span).withConfig({
+  displayName: "indexstyles__FirstColumn",
+  componentId: "sc-1fardff-8"
+})(["flex-basis:10%;"]);
+Home.SecondColumn = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Span).withConfig({
+  displayName: "indexstyles__SecondColumn",
+  componentId: "sc-1fardff-9"
+})(["flex-basis:25%;"]);
+Home.ThirdColumn = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Span).withConfig({
+  displayName: "indexstyles__ThirdColumn",
+  componentId: "sc-1fardff-10"
+})(["flex-basis:25%;"]);
+Home.ForthColumn = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Span).withConfig({
+  displayName: "indexstyles__ForthColumn",
+  componentId: "sc-1fardff-11"
+})(["flex-basis:20%;"]);
+Home.FifthColumn = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Home.Span).withConfig({
+  displayName: "indexstyles__FifthColumn",
+  componentId: "sc-1fardff-12"
+})(["flex-basis:20%;"]);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -957,10 +1144,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/user/[user].js":
-/*!******************************!*\
-  !*** ./pages/user/[user].js ***!
-  \******************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -970,159 +1157,177 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_main_component_main_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/main-component/main-component */ "./components/main-component/main-component.jsx");
-/* harmony import */ var _components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/pages/user/user.styles */ "./components/pages/user/user.styles.js");
-var _jsxFileName = "/Users/masis/Documents/dreamquark/dreamquark/front/pages/user/[user].js";
+/* harmony import */ var _components_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/head */ "./components/head.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_main_component_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/main-component/main-component */ "./components/main-component/main-component.jsx");
+/* harmony import */ var _components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/pages/index/index.styles */ "./components/pages/index/index.styles.js");
+var _jsxFileName = "/Users/masis/Documents/dreamquark/dreamquark/front/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-/**
- * @property { string } user_id
- * @property { string } user_name
- * @property { string } user_email
- * @property { string } organization_name
- * @property { array } team_name
- * @param user
- */
 
-const User = ({
-  user
-}) => __jsx(_components_main_component_main_component__WEBPACK_IMPORTED_MODULE_2__["default"], {
+
+
+const Home = ({
+  users,
+  asPath
+}) => __jsx(_components_main_component_main_component__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  asPath: asPath,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, __jsx(_components_head__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  title: "Home",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].Wrapper, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].H1, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, "List of users"), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].Ul, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].FirstRow, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 16
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].H1, {
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].FirstColumn, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 17
   },
   __self: undefined
-}, "User details"), __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].P, {
+}, "Id"), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].SecondColumn, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 18
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].Span, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, "User id : "), " ", __jsx("span", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, user[0].user_id)), __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].P, {
+}, "Name"), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].ThirdColumn, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 19
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].Span, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, "User name : "), " ", __jsx("span", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, user[0].user_name)), __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].P, {
+}, "Email"), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].ForthColumn, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 20
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].Span, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, "User email : "), " ", __jsx("span", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, user[0].user_email)), __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].P, {
+}, "Organization"), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].FifthColumn, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].Span, {
+}, "Team(s)")), users.map((user, i) => __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].Li, {
+  key: i,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 25
   },
   __self: undefined
-}, "Belongs to organization : "), " ", __jsx("span", {
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  href: {
+    pathname: `/user/[user]`,
+    query: {
+      id: user.user_id
+    }
+  },
+  as: `/user/${user.user_id}`,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 26
   },
   __self: undefined
-}, user[0].organization_name)), __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].P, {
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].A, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 30
   },
   __self: undefined
-}, __jsx(_components_pages_user_user_styles__WEBPACK_IMPORTED_MODULE_3__["default"].Span, {
+}, __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].FirstColumn, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 31
   },
   __self: undefined
-}, "Belongs to ", user[0].team_name.length > 1 ? 'teams' : 'team', " : "), __jsx("span", {
+}, user.user_id), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].SecondColumn, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 32
   },
   __self: undefined
-}, user[0].team_name.map((team, i) => i + 1 < user[0].team_name.length ? `${team}, ` : team)))));
+}, user.user_name), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].ThirdColumn, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
+  },
+  __self: undefined
+}, user.user_email), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].ForthColumn, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34
+  },
+  __self: undefined
+}, user.organization_name), __jsx(_components_pages_index_index_styles__WEBPACK_IMPORTED_MODULE_5__["default"].FifthColumn, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35
+  },
+  __self: undefined
+}, user.team_name.map((t, i) => i + 1 < user.team_name.length ? `${t}, ` : `${t}`))))))))));
 
-User.getInitialProps = async ({
-  query,
+Home.getInitialProps = async ({
   asPath
 }) => {
-  const queryUrl = asPath.substring(6);
-  const queryUser = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(`http://localhost:8080/api/user/${query.id ? query.id : queryUrl}`);
-  const user = await queryUser.json();
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()('http://localhost:8080/api');
   return {
-    user
+    users: await res.json(),
+    asPath
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (User);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 3:
-/*!************************************!*\
-  !*** multi ./pages/user/[user].js ***!
-  \************************************/
+/***/ 8:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/masis/Documents/dreamquark/dreamquark/front/pages/user/[user].js */"./pages/user/[user].js");
+module.exports = __webpack_require__(/*! /Users/masis/Documents/dreamquark/dreamquark/front/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -1226,6 +1431,17 @@ module.exports = require("next-server/dist/lib/utils");
 
 /***/ }),
 
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -1282,4 +1498,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=[user].js.map
+//# sourceMappingURL=index.js.map
